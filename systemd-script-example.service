@@ -1,0 +1,15 @@
+ # /etc/systemd/system/systemd-script-example.service
+
+[Unit]
+Description=My flashdrive script trigger
+Requires=media-YourMediaLabel.mount
+After=media-YourMediaLabel.mount
+
+[Service]
+ExecStart=/home/you/bin/triggerScript.sh
+
+[Install]
+WantedBy=media-YourMediaLabel.mount
+
+#sudo systemctl start your.service
+#sudo systemctl enable your.service
