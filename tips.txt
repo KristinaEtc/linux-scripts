@@ -1,3 +1,8 @@
 #auto mount devices
 udiskie -a -t
 
+xclip
+
+#notification server for tilling wm
+twmn-git
+ 
